@@ -21,4 +21,6 @@ function playerChoice () {
 function computerChoice (){
     //computer chooses random choice
     return choices[Math.floor(Math.random()*choices.length)]
-}
+} 
+
+game();
