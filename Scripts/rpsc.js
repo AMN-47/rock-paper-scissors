@@ -5,7 +5,9 @@ function game () {
     //play the game with computer
     //play five rounds
     //console based
-    playRound();
+    for (let i = 0; i <=5; i++){
+        playRound();
+    }
 } 
 
 function playRound () {
@@ -57,6 +59,8 @@ function checkWinner(choiceP, choiceC){
     }else{
         return 'Computer';
     }
-}
+} 
+
+
 
 game();
