@@ -1,4 +1,5 @@
-const choices = ["rock", "paper", "scissors"]
+const choices = ["rock", "paper", "scissors"];
+const winners = [];
 
 
 function game () {
@@ -61,6 +62,8 @@ function checkWinner(choiceP, choiceC){
     }
 } 
 
+function logWins(){
 
+}
 
 game();
