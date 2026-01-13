@@ -67,10 +67,16 @@ function logWins(){
     let playerWins = winners.filter(item => item == "Player").length;
     let computerWins = winners.filter(item => item == "Computer").length;
     let ties = winners.filter(item => item == "Tie").length;
-    console.log('Results:');
-    console.log('Player Wins:', playerWins);
-    console.log('Computer Wins:', computerWins);
-    console.log('Ties:', ties)
+    console.log("Results:");
+    console.log("Player Wins:", playerWins);
+    console.log("Computer Wins:", computerWins);
+    console.log("Ties:", ties)
+}
+
+function logRound(playerChoice, computerChoice, winner){
+    console.log("Player Choice", playerChoice);
+    console.log("Computer Choice", computerChoice);
+    console.log(winner, "won the Round")
 }
 
 game();
