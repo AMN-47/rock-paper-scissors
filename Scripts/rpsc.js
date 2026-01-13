@@ -54,7 +54,7 @@ function checkWinner(choiceP, choiceC){
     if(choiceP === choiceC){
         return "Tie";
     }else if(
-        (choiceP === "rock" && choiceC == "scissorrs") || 
+        (choiceP === "rock" && choiceC == "scissors") || 
         (choiceP === "paper" && choiceC == "rock") || 
         (choiceP === "scissors" && choiceC == "paper")
     ){
@@ -83,4 +83,3 @@ function logRound(playerChoice, computerChoice, winner, round){
 
 
 
-game();
