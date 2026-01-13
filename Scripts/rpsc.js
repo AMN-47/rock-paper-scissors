@@ -11,6 +11,7 @@ function game () {
 function playRound () {
     const playerSelection = playerChoice();
     const computerSelection = computerChoice();
+    
 } 
 
 function playerChoice () {
@@ -42,5 +43,18 @@ function validateInput(choice) {
     return choices.includes(choice);
 }
 
+function checkWinnder(choiceP, choiceC){
+    if(choiceP === choiceC){
+        return 'Tie';
+    }else if(
+        (choiceP === "rock" && choiceC == "scissorrs") || 
+        (choiceP === "paper" && choiceC == "rock") || 
+        (choiceP === "scissors" && choiceC == "paper")
+    ){
+        return 'Player';
+    }else{
+        return 'Computer';
+    }
+}
 
 game();
