@@ -11,7 +11,8 @@ function game () {
 function playRound () {
     const playerSelection = playerChoice();
     const computerSelection = computerChoice();
-    
+    const winner = checkWinner(playerSelection, computerSelection);
+    console.log(winner);
 } 
 
 function playerChoice () {
@@ -43,7 +44,7 @@ function validateInput(choice) {
     return choices.includes(choice);
 }
 
-function checkWinnder(choiceP, choiceC){
+function checkWinner(choiceP, choiceC){
     if(choiceP === choiceC){
         return 'Tie';
     }else if(
