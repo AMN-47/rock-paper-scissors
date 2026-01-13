@@ -21,8 +21,13 @@ function playerChoice () {
     }
     input = input.toLowerCase();
     let check = validateInput(input)
-    if (check == true){
-        console.log(input)
+    while (check == false){
+        input = prompt("Type Rock, Paper or Scissors, capatilisation does not matter, just make sure spelling is correct!");
+        while (input == null) {
+        input = prompt("Type Rock, Paper or Scissors");
+    }
+        input = input.toLowerCase();
+        check = validateInput(input);
     }
     //console.log(input);
 }
@@ -34,11 +39,7 @@ function computerChoice (){
 
 function validateInput(choice) {
     //this function ensures that there is error handeling when wrong choice/input is given
-    if(choices.includes(choice)){
-        return true
-    }else{
-        return false
-    }
+    return choices.includes(choice);
 }
 
 
