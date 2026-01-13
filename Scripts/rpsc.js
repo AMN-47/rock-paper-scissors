@@ -11,6 +11,7 @@ function game () {
 function playRound () {
     const playerSelection = playerChoice();
     const computerSelection = computerChoice();
+    console.log(computerSelection);
     const winner = checkWinner(playerSelection, computerSelection);
     console.log(winner);
 } 
@@ -31,7 +32,7 @@ function playerChoice () {
         input = input.toLowerCase();
         check = validateInput(input);
     }
-    //console.log(input);
+    return input;
 }
 
 function computerChoice (){
