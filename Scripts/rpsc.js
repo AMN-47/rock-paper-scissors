@@ -1,7 +1,6 @@
 const choices = ["rock", "paper", "scissors"];
 const winners = [];
 
-
 function game () {
     //play the game with computer
     //play five rounds
